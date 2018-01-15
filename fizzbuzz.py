@@ -1,3 +1,4 @@
 class Fizzbuzz(object):
   def play(self, number):
-    return 'fizz'
+    if number%3 == 0:
+      return 'fizz'
