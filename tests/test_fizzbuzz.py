@@ -16,3 +16,13 @@ class FizzbuzzTest(unittest.TestCase):
     game = Fizzbuzz()
     result = game.play(5)
     self.assertEqual('buzz', result)
+
+  def test_returns_fizz_with_value_10(self):
+    game = Fizzbuzz()
+    result = game.play(10)
+    self.assertEqual('buzz', result)
+
+  def test_returns_fizz_with_value_15(self):
+    game = Fizzbuzz()
+    result = game.play(15)
+    self.assertEqual('fizzbuzz', result)
